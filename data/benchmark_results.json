@@ -1,0 +1,909 @@
+{
+  "dataset_name": "SpeechProof-Contrastive-v1",
+  "total_clips": 10,
+  "total_pairs": 5,
+  "flaw_grounding_accuracy_pct": 100.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "mean_overall_score_delta": -15.5,
+  "pairs_evaluated": [
+    {
+      "pair_id": "P01",
+      "script_id": "SCR_ELEVATOR_PITCH",
+      "script_title": "Investor Elevator Pitch",
+      "intended_flaw": "fillers",
+      "ideal_overall_score": 90.7,
+      "flawed_overall_score": 68.4,
+      "overall_score_delta": -22.3,
+      "flaw_detection_success": true,
+      "intended_flaw_detected_in_flawed": true,
+      "intended_flaw_detected_in_ideal": false,
+      "flawed_evidence_count": 6,
+      "ideal_evidence_count": 0,
+      "notes": "Contains 5 prominent filler words: 'um', 'like', 'um', 'you know', 'uh'.",
+      "categories": {
+        "Pace": {
+          "ideal": 58.5,
+          "flawed": 56.8,
+          "delta": -1.7
+        },
+        "Fluency": {
+          "ideal": 100.0,
+          "flawed": 10.0,
+          "delta": -90.0
+        },
+        "Pausing": {
+          "ideal": 100.0,
+          "flawed": 91.9,
+          "delta": -8.1
+        },
+        "Vocal Variation": {
+          "ideal": 100.0,
+          "flawed": 88.2,
+          "delta": -11.8
+        },
+        "Volume Consistency": {
+          "ideal": 95.0,
+          "flawed": 95.0,
+          "delta": 0.0
+        }
+      },
+      "metrics": {
+        "speaking_rate": {
+          "name": "Speaking Rate",
+          "unit": "WPM",
+          "ideal": 100.8,
+          "flawed": 99.8,
+          "delta": -1.0,
+          "pct_change": -1.0
+        },
+        "filler_rate": {
+          "name": "Filler Rate",
+          "unit": "fillers/min",
+          "ideal": 0.0,
+          "flawed": 15.0,
+          "delta": 15.0,
+          "pct_change": 15000.0
+        },
+        "pause_ratio": {
+          "name": "Pause Ratio",
+          "unit": "%",
+          "ideal": 23.4,
+          "flawed": 33.8,
+          "delta": 10.4,
+          "pct_change": 44.4
+        },
+        "pitch_std": {
+          "name": "Pitch F0 Std",
+          "unit": "Hz",
+          "ideal": 51.0,
+          "flawed": 60.9,
+          "delta": 9.9,
+          "pct_change": 19.4
+        },
+        "volume_std": {
+          "name": "Volume RMS Std",
+          "unit": "dB",
+          "ideal": 7.1,
+          "flawed": 7.3,
+          "delta": 0.1,
+          "pct_change": 2.1
+        }
+      },
+      "target_evidence": [
+        {
+          "flaw_type": "filler_word",
+          "start_time": 0.0,
+          "end_time": 0.6,
+          "duration": 0.6,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'um' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'um'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.13,
+          "context_text": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded"
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 3.54,
+          "end_time": 4.0,
+          "duration": 0.46,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'like' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'like'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.95,
+          "context_text": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded"
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 6.74,
+          "end_time": 7.0,
+          "duration": 0.26,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'um' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'um'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.87,
+          "context_text": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded"
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 13.21,
+          "end_time": 13.69,
+          "duration": 0.48,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'like' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'like'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.99,
+          "context_text": "speech-analytic platform. You know, traditional coaches give, like, vague subjective impressions."
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 16.77,
+          "end_time": 16.93,
+          "duration": 0.16,
+          "severity": "mild",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'basically' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'basically'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.99,
+          "context_text": "Basically, speech-proof grounds every delivery flaw, uh, with millisecond precision and targeted drills."
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 20.73,
+          "end_time": 20.73,
+          "duration": 0.15,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'uh' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'uh'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.59,
+          "context_text": "Basically, speech-proof grounds every delivery flaw, uh, with millisecond precision and targeted drills."
+        }
+      ],
+      "ideal_transcript": "Welcome Investors. Today we are launching Speechproof, an evidence-grounded speech analytics platform. Traditional coaches give vague subjective impressions. Speechproof grounds every delivery flow with millisecond precision, reproducible rubric scoring, and targeted practice drills.",
+      "flawed_transcript": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded speech-analytic platform. You know, traditional coaches give, like, vague subjective impressions. Basically, speech-proof grounds every delivery flaw, uh, with millisecond precision and targeted drills.",
+      "ideal_flaws": [],
+      "flawed_flaws": [
+        {
+          "flaw_type": "filler_word",
+          "start_time": 0.0,
+          "end_time": 0.6,
+          "duration": 0.6,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'um' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'um'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.13,
+          "context_text": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded"
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 3.54,
+          "end_time": 4.0,
+          "duration": 0.46,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'like' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'like'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.95,
+          "context_text": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded"
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 6.74,
+          "end_time": 7.0,
+          "duration": 0.26,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'um' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'um'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.87,
+          "context_text": "Um, welcome investors. Today, like, we are launching speech-proof, um, an evidence-grounded"
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 13.21,
+          "end_time": 13.69,
+          "duration": 0.48,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'like' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'like'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.99,
+          "context_text": "speech-analytic platform. You know, traditional coaches give, like, vague subjective impressions."
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 16.77,
+          "end_time": 16.93,
+          "duration": 0.16,
+          "severity": "mild",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'basically' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'basically'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.99,
+          "context_text": "Basically, speech-proof grounds every delivery flaw, uh, with millisecond precision and targeted drills."
+        },
+        {
+          "flaw_type": "filler_word",
+          "start_time": 20.73,
+          "end_time": 20.73,
+          "duration": 0.15,
+          "severity": "moderate",
+          "metric_name": "filler_occurrence",
+          "observed_value": 1.0,
+          "unit": "count",
+          "threshold": 0.0,
+          "rubric_category": "Fluency",
+          "explanation": "Verbal filler 'uh' introduces cognitive friction and weakens message authority.",
+          "recommendation": "Pause in silence instead of uttering 'uh'. Silence conveys poise; filler words convey hesitation.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.59,
+          "context_text": "Basically, speech-proof grounds every delivery flaw, uh, with millisecond precision and targeted drills."
+        }
+      ]
+    },
+    {
+      "pair_id": "P02",
+      "script_id": "SCR_TECH_KEYNOTE",
+      "script_title": "Cloud Architecture Keynote",
+      "intended_flaw": "pauses",
+      "ideal_overall_score": 91.8,
+      "flawed_overall_score": 74.5,
+      "overall_score_delta": -17.3,
+      "flaw_detection_success": true,
+      "intended_flaw_detected_in_flawed": true,
+      "intended_flaw_detected_in_ideal": false,
+      "flawed_evidence_count": 2,
+      "ideal_evidence_count": 0,
+      "notes": "Two awkward silences of 2.5 seconds inserted between major assertions.",
+      "categories": {
+        "Pace": {
+          "ideal": 65.0,
+          "flawed": 32.6,
+          "delta": -32.4
+        },
+        "Fluency": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Pausing": {
+          "ideal": 100.0,
+          "flawed": 45.9,
+          "delta": -54.1
+        },
+        "Vocal Variation": {
+          "ideal": 99.0,
+          "flawed": 99.0,
+          "delta": 0.0
+        },
+        "Volume Consistency": {
+          "ideal": 95.0,
+          "flawed": 95.0,
+          "delta": 0.0
+        }
+      },
+      "metrics": {
+        "speaking_rate": {
+          "name": "Speaking Rate",
+          "unit": "WPM",
+          "ideal": 104.6,
+          "flawed": 85.7,
+          "delta": -18.9,
+          "pct_change": -18.1
+        },
+        "filler_rate": {
+          "name": "Filler Rate",
+          "unit": "fillers/min",
+          "ideal": 0.0,
+          "flawed": 0.0,
+          "delta": 0.0,
+          "pct_change": 0.0
+        },
+        "pause_ratio": {
+          "name": "Pause Ratio",
+          "unit": "%",
+          "ideal": 17.7,
+          "flawed": 34.5,
+          "delta": 16.8,
+          "pct_change": 94.9
+        },
+        "pitch_std": {
+          "name": "Pitch F0 Std",
+          "unit": "Hz",
+          "ideal": 40.1,
+          "flawed": 40.0,
+          "delta": -0.0,
+          "pct_change": -0.0
+        },
+        "volume_std": {
+          "name": "Volume RMS Std",
+          "unit": "dB",
+          "ideal": 6.9,
+          "flawed": 6.9,
+          "delta": 0.0,
+          "pct_change": 0.0
+        }
+      },
+      "target_evidence": [
+        {
+          "flaw_type": "prolonged_pause",
+          "start_time": 5.9,
+          "end_time": 9.28,
+          "duration": 3.38,
+          "severity": "severe",
+          "metric_name": "pause_duration",
+          "observed_value": 3.38,
+          "unit": "seconds",
+          "threshold": 1.4,
+          "rubric_category": "Pausing",
+          "explanation": "Awkward silence of 3.38s exceeds the natural delivery threshold of 1.4s.",
+          "recommendation": "Replace extended dead silences with deliberate transitions, bridging remarks, or forward-looking connective phrases.",
+          "evidence_source": "audio_signal",
+          "confidence": 0.98,
+          "context_text": "Our infrastructure team recently migrated 40 back-end microservices to an event-driven architecture. ... During peak traffic, failover latency dropped from 8 seconds to 200 milliseconds."
+        },
+        {
+          "flaw_type": "prolonged_pause",
+          "start_time": 14.83,
+          "end_time": 18.24,
+          "duration": 3.41,
+          "severity": "severe",
+          "metric_name": "pause_duration",
+          "observed_value": 3.41,
+          "unit": "seconds",
+          "threshold": 1.4,
+          "rubric_category": "Pausing",
+          "explanation": "Awkward silence of 3.41s exceeds the natural delivery threshold of 1.4s.",
+          "recommendation": "Replace extended dead silences with deliberate transitions, bridging remarks, or forward-looking connective phrases.",
+          "evidence_source": "audio_signal",
+          "confidence": 0.98,
+          "context_text": "During peak traffic, failover latency dropped from 8 seconds to 200 milliseconds. ... However, maintaining strict distributed tracing requires clear instrumentation boundaries."
+        }
+      ],
+      "ideal_transcript": "Our infrastructure team recently migrated 40 backend microservices to an event-driven architecture. During peak traffic, failover latency dropped from 8 seconds to 200 milliseconds. However, maintaining strict distributed tracing requires clear instrumentation boundaries.",
+      "flawed_transcript": "Our infrastructure team recently migrated 40 back-end microservices to an event-driven architecture. During peak traffic, failover latency dropped from 8 seconds to 200 milliseconds. However, maintaining strict distributed tracing requires clear instrumentation boundaries.",
+      "ideal_flaws": [],
+      "flawed_flaws": [
+        {
+          "flaw_type": "prolonged_pause",
+          "start_time": 5.9,
+          "end_time": 9.28,
+          "duration": 3.38,
+          "severity": "severe",
+          "metric_name": "pause_duration",
+          "observed_value": 3.38,
+          "unit": "seconds",
+          "threshold": 1.4,
+          "rubric_category": "Pausing",
+          "explanation": "Awkward silence of 3.38s exceeds the natural delivery threshold of 1.4s.",
+          "recommendation": "Replace extended dead silences with deliberate transitions, bridging remarks, or forward-looking connective phrases.",
+          "evidence_source": "audio_signal",
+          "confidence": 0.98,
+          "context_text": "Our infrastructure team recently migrated 40 back-end microservices to an event-driven architecture. ... During peak traffic, failover latency dropped from 8 seconds to 200 milliseconds."
+        },
+        {
+          "flaw_type": "prolonged_pause",
+          "start_time": 14.83,
+          "end_time": 18.24,
+          "duration": 3.41,
+          "severity": "severe",
+          "metric_name": "pause_duration",
+          "observed_value": 3.41,
+          "unit": "seconds",
+          "threshold": 1.4,
+          "rubric_category": "Pausing",
+          "explanation": "Awkward silence of 3.41s exceeds the natural delivery threshold of 1.4s.",
+          "recommendation": "Replace extended dead silences with deliberate transitions, bridging remarks, or forward-looking connective phrases.",
+          "evidence_source": "audio_signal",
+          "confidence": 0.98,
+          "context_text": "During peak traffic, failover latency dropped from 8 seconds to 200 milliseconds. ... However, maintaining strict distributed tracing requires clear instrumentation boundaries."
+        }
+      ]
+    },
+    {
+      "pair_id": "P03",
+      "script_id": "SCR_PRODUCT_LAUNCH",
+      "script_title": "Biometric Sensor Launch",
+      "intended_flaw": "rushed",
+      "ideal_overall_score": 98.2,
+      "flawed_overall_score": 80.4,
+      "overall_score_delta": -17.8,
+      "flaw_detection_success": true,
+      "intended_flaw_detected_in_flawed": true,
+      "intended_flaw_detected_in_ideal": false,
+      "flawed_evidence_count": 3,
+      "ideal_evidence_count": 0,
+      "notes": "Rushed speech rate exceeding 210 WPM without adequate breathing intervals.",
+      "categories": {
+        "Pace": {
+          "ideal": 97.1,
+          "flawed": 15.0,
+          "delta": -82.1
+        },
+        "Fluency": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Pausing": {
+          "ideal": 100.0,
+          "flawed": 95.1,
+          "delta": -4.9
+        },
+        "Vocal Variation": {
+          "ideal": 99.0,
+          "flawed": 97.1,
+          "delta": -1.9
+        },
+        "Volume Consistency": {
+          "ideal": 95.0,
+          "flawed": 95.0,
+          "delta": 0.0
+        }
+      },
+      "metrics": {
+        "speaking_rate": {
+          "name": "Speaking Rate",
+          "unit": "WPM",
+          "ideal": 123.3,
+          "flawed": 276.5,
+          "delta": 153.2,
+          "pct_change": 124.2
+        },
+        "filler_rate": {
+          "name": "Filler Rate",
+          "unit": "fillers/min",
+          "ideal": 0.0,
+          "flawed": 0.0,
+          "delta": 0.0,
+          "pct_change": 0.0
+        },
+        "pause_ratio": {
+          "name": "Pause Ratio",
+          "unit": "%",
+          "ideal": 14.7,
+          "flawed": 9.9,
+          "delta": -4.8,
+          "pct_change": -32.7
+        },
+        "pitch_std": {
+          "name": "Pitch F0 Std",
+          "unit": "Hz",
+          "ideal": 45.7,
+          "flawed": 40.5,
+          "delta": -5.2,
+          "pct_change": -11.4
+        },
+        "volume_std": {
+          "name": "Volume RMS Std",
+          "unit": "dB",
+          "ideal": 6.4,
+          "flawed": 5.6,
+          "delta": -0.9,
+          "pct_change": -13.5
+        }
+      },
+      "target_evidence": [
+        {
+          "flaw_type": "rushed_segment",
+          "start_time": 0.0,
+          "end_time": 2.7,
+          "duration": 2.7,
+          "severity": "severe",
+          "metric_name": "segment_wpm",
+          "observed_value": 333.3,
+          "unit": "WPM",
+          "threshold": 165.0,
+          "rubric_category": "Pace",
+          "explanation": "Speech rate surged to 333.3 WPM, which risks losing listener comprehension.",
+          "recommendation": "Slow down on key points; enunciate critical nouns and verbs deliberately.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.92,
+          "context_text": "Next month, we are rolling out our biometric wearable sensor across the regional hospital networks."
+        },
+        {
+          "flaw_type": "rushed_segment",
+          "start_time": 3.02,
+          "end_time": 5.16,
+          "duration": 2.14,
+          "severity": "severe",
+          "metric_name": "segment_wpm",
+          "observed_value": 280.4,
+          "unit": "WPM",
+          "threshold": 165.0,
+          "rubric_category": "Pace",
+          "explanation": "Speech rate surged to 280.4 WPM, which risks losing listener comprehension.",
+          "recommendation": "Slow down on key points; enunciate critical nouns and verbs deliberately.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.92,
+          "context_text": "It continuously tracks cardiac rhythm, oxygen saturation, and body temperature."
+        },
+        {
+          "flaw_type": "rushed_segment",
+          "start_time": 5.74,
+          "end_time": 7.2,
+          "duration": 1.46,
+          "severity": "severe",
+          "metric_name": "segment_wpm",
+          "observed_value": 411.0,
+          "unit": "WPM",
+          "threshold": 165.0,
+          "rubric_category": "Pace",
+          "explanation": "Speech rate surged to 411.0 WPM, which risks losing listener comprehension.",
+          "recommendation": "Slow down on key points; enunciate critical nouns and verbs deliberately.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.92,
+          "context_text": "Clinical trials reveal the 94% reduction in miss alerts."
+        }
+      ],
+      "ideal_transcript": "Next month we are rolling out our biometric wearable sensor across three regional hospital networks. It continuously tracks cardiac rhythm, oxygen saturation and body temperature. Clinical trials revealed in 94% reduction in mist alerts.",
+      "flawed_transcript": "Next month, we are rolling out our biometric wearable sensor across the regional hospital networks. It continuously tracks cardiac rhythm, oxygen saturation, and body temperature. Clinical trials reveal the 94% reduction in miss alerts.",
+      "ideal_flaws": [],
+      "flawed_flaws": [
+        {
+          "flaw_type": "rushed_segment",
+          "start_time": 0.0,
+          "end_time": 2.7,
+          "duration": 2.7,
+          "severity": "severe",
+          "metric_name": "segment_wpm",
+          "observed_value": 333.3,
+          "unit": "WPM",
+          "threshold": 165.0,
+          "rubric_category": "Pace",
+          "explanation": "Speech rate surged to 333.3 WPM, which risks losing listener comprehension.",
+          "recommendation": "Slow down on key points; enunciate critical nouns and verbs deliberately.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.92,
+          "context_text": "Next month, we are rolling out our biometric wearable sensor across the regional hospital networks."
+        },
+        {
+          "flaw_type": "rushed_segment",
+          "start_time": 3.02,
+          "end_time": 5.16,
+          "duration": 2.14,
+          "severity": "severe",
+          "metric_name": "segment_wpm",
+          "observed_value": 280.4,
+          "unit": "WPM",
+          "threshold": 165.0,
+          "rubric_category": "Pace",
+          "explanation": "Speech rate surged to 280.4 WPM, which risks losing listener comprehension.",
+          "recommendation": "Slow down on key points; enunciate critical nouns and verbs deliberately.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.92,
+          "context_text": "It continuously tracks cardiac rhythm, oxygen saturation, and body temperature."
+        },
+        {
+          "flaw_type": "rushed_segment",
+          "start_time": 5.74,
+          "end_time": 7.2,
+          "duration": 1.46,
+          "severity": "severe",
+          "metric_name": "segment_wpm",
+          "observed_value": 411.0,
+          "unit": "WPM",
+          "threshold": 165.0,
+          "rubric_category": "Pace",
+          "explanation": "Speech rate surged to 411.0 WPM, which risks losing listener comprehension.",
+          "recommendation": "Slow down on key points; enunciate critical nouns and verbs deliberately.",
+          "evidence_source": "transcript_alignment",
+          "confidence": 0.92,
+          "context_text": "Clinical trials reveal the 94% reduction in miss alerts."
+        }
+      ]
+    },
+    {
+      "pair_id": "P04",
+      "script_id": "SCR_EXEC_BRIEFING",
+      "script_title": "Quarterly Executive Briefing",
+      "intended_flaw": "monotone",
+      "ideal_overall_score": 89.9,
+      "flawed_overall_score": 78.2,
+      "overall_score_delta": -11.7,
+      "flaw_detection_success": true,
+      "intended_flaw_detected_in_flawed": true,
+      "intended_flaw_detected_in_ideal": false,
+      "flawed_evidence_count": 1,
+      "ideal_evidence_count": 0,
+      "notes": "Acoustically flattened pitch variation (std F0 < 5 Hz), producing robotic monotone.",
+      "categories": {
+        "Pace": {
+          "ideal": 55.4,
+          "flawed": 50.0,
+          "delta": -5.4
+        },
+        "Fluency": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Pausing": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Vocal Variation": {
+          "ideal": 99.2,
+          "flawed": 46.1,
+          "delta": -53.1
+        },
+        "Volume Consistency": {
+          "ideal": 95.0,
+          "flawed": 95.0,
+          "delta": 0.0
+        }
+      },
+      "metrics": {
+        "speaking_rate": {
+          "name": "Speaking Rate",
+          "unit": "WPM",
+          "ideal": 99.0,
+          "flawed": 0.0,
+          "delta": -99.0,
+          "pct_change": -100.0
+        },
+        "filler_rate": {
+          "name": "Filler Rate",
+          "unit": "fillers/min",
+          "ideal": 0.0,
+          "flawed": 0.0,
+          "delta": 0.0,
+          "pct_change": 0.0
+        },
+        "pause_ratio": {
+          "name": "Pause Ratio",
+          "unit": "%",
+          "ideal": 20.1,
+          "flawed": 19.9,
+          "delta": -0.2,
+          "pct_change": -1.0
+        },
+        "pitch_std": {
+          "name": "Pitch F0 Std",
+          "unit": "Hz",
+          "ideal": 49.6,
+          "flawed": 12.9,
+          "delta": -36.8,
+          "pct_change": -74.1
+        },
+        "volume_std": {
+          "name": "Volume RMS Std",
+          "unit": "dB",
+          "ideal": 6.8,
+          "flawed": 6.5,
+          "delta": -0.3,
+          "pct_change": -4.8
+        }
+      },
+      "target_evidence": [
+        {
+          "flaw_type": "monotone_pitch",
+          "start_time": 0.0,
+          "end_time": 18.181,
+          "duration": 18.181,
+          "severity": "mild",
+          "metric_name": "pitch_f0_std",
+          "observed_value": 12.9,
+          "unit": "Hz",
+          "threshold": 16.0,
+          "rubric_category": "Vocal Variation",
+          "explanation": "Pitch modulation standard deviation of 12.9 Hz is below dynamic speaking threshold (20 Hz).",
+          "recommendation": "Practice vocal inflection drills: raise pitch at the end of provocative questions, lower it to emphasize conclusions.",
+          "evidence_source": "acoustic_feature",
+          "confidence": 0.9,
+          "context_text": "Pitch range observed: 1.4 Hz across 18.2s"
+        }
+      ],
+      "ideal_transcript": "To accelerate growth this quarter, we are prioritizing three key initiatives, enterprise platform adoption, international compliance certification, and developer community expansion. With disciplined execution, our operating margins will expand significantly.",
+      "flawed_transcript": "",
+      "ideal_flaws": [],
+      "flawed_flaws": [
+        {
+          "flaw_type": "monotone_pitch",
+          "start_time": 0.0,
+          "end_time": 18.181,
+          "duration": 18.181,
+          "severity": "mild",
+          "metric_name": "pitch_f0_std",
+          "observed_value": 12.9,
+          "unit": "Hz",
+          "threshold": 16.0,
+          "rubric_category": "Vocal Variation",
+          "explanation": "Pitch modulation standard deviation of 12.9 Hz is below dynamic speaking threshold (20 Hz).",
+          "recommendation": "Practice vocal inflection drills: raise pitch at the end of provocative questions, lower it to emphasize conclusions.",
+          "evidence_source": "acoustic_feature",
+          "confidence": 0.9,
+          "context_text": "Pitch range observed: 1.4 Hz across 18.2s"
+        }
+      ]
+    },
+    {
+      "pair_id": "P05",
+      "script_id": "SCR_INCIDENT_POSTMORTEM",
+      "script_title": "Customer Advisory Incident Postmortem",
+      "intended_flaw": "volume",
+      "ideal_overall_score": 94.9,
+      "flawed_overall_score": 86.7,
+      "overall_score_delta": -8.2,
+      "flaw_detection_success": true,
+      "intended_flaw_detected_in_flawed": true,
+      "intended_flaw_detected_in_ideal": false,
+      "flawed_evidence_count": 1,
+      "ideal_evidence_count": 0,
+      "notes": "16 dB volume drop in core explanation segment and gradual decay at conclusion.",
+      "categories": {
+        "Pace": {
+          "ideal": 79.3,
+          "flawed": 90.7,
+          "delta": 11.4
+        },
+        "Fluency": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Pausing": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Vocal Variation": {
+          "ideal": 100.0,
+          "flawed": 100.0,
+          "delta": 0.0
+        },
+        "Volume Consistency": {
+          "ideal": 95.0,
+          "flawed": 42.6,
+          "delta": -52.4
+        }
+      },
+      "metrics": {
+        "speaking_rate": {
+          "name": "Speaking Rate",
+          "unit": "WPM",
+          "ideal": 112.9,
+          "flawed": 119.6,
+          "delta": 6.7,
+          "pct_change": 5.9
+        },
+        "filler_rate": {
+          "name": "Filler Rate",
+          "unit": "fillers/min",
+          "ideal": 0.0,
+          "flawed": 0.0,
+          "delta": 0.0,
+          "pct_change": 0.0
+        },
+        "pause_ratio": {
+          "name": "Pause Ratio",
+          "unit": "%",
+          "ideal": 19.0,
+          "flawed": 26.5,
+          "delta": 7.5,
+          "pct_change": 39.5
+        },
+        "pitch_std": {
+          "name": "Pitch F0 Std",
+          "unit": "Hz",
+          "ideal": 48.2,
+          "flawed": 51.8,
+          "delta": 3.6,
+          "pct_change": 7.4
+        },
+        "volume_std": {
+          "name": "Volume RMS Std",
+          "unit": "dB",
+          "ideal": 6.9,
+          "flawed": 10.1,
+          "delta": 3.2,
+          "pct_change": 45.5
+        }
+      },
+      "target_evidence": [
+        {
+          "flaw_type": "volume_instability",
+          "start_time": 0.0,
+          "end_time": 18.065,
+          "duration": 18.065,
+          "severity": "moderate",
+          "metric_name": "rms_std_db",
+          "observed_value": 10.1,
+          "unit": "dB",
+          "threshold": 9.5,
+          "rubric_category": "Volume Consistency",
+          "explanation": "Volume variability of 10.1 dB indicates erratic projection or microphone distance shifts.",
+          "recommendation": "Maintain consistent diaphragm support and stable distance from the microphone.",
+          "evidence_source": "acoustic_feature",
+          "confidence": 0.89,
+          "context_text": "Dynamic range: 29.5 dB"
+        }
+      ],
+      "ideal_transcript": "Thank you for joining our customer advisory briefing. Last Tuesday, a database configuration error caused 40 minutes of intermittent dashboard downtime. No customer data was compromised, and we have implemented automated verification guards to",
+      "flawed_transcript": "Thank you for joining our customer advisory briefing. Last Tuesday, a database configuration error caused 40 minutes of intermittent dashboard downtime. No customer data was compromised, and we have implemented automated verification guards to prevent recurrence.",
+      "ideal_flaws": [],
+      "flawed_flaws": [
+        {
+          "flaw_type": "volume_instability",
+          "start_time": 0.0,
+          "end_time": 18.065,
+          "duration": 18.065,
+          "severity": "moderate",
+          "metric_name": "rms_std_db",
+          "observed_value": 10.1,
+          "unit": "dB",
+          "threshold": 9.5,
+          "rubric_category": "Volume Consistency",
+          "explanation": "Volume variability of 10.1 dB indicates erratic projection or microphone distance shifts.",
+          "recommendation": "Maintain consistent diaphragm support and stable distance from the microphone.",
+          "evidence_source": "acoustic_feature",
+          "confidence": 0.89,
+          "context_text": "Dynamic range: 29.5 dB"
+        }
+      ]
+    }
+  ]
+}
